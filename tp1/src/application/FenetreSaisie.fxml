@@ -6,12 +6,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane  id="BorderPane" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tp1.FXMLDocumentController">
+<BorderPane  id="BorderPane" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXMLDocumentController">
     <top>
         <FlowPane>
-            <TextField fx:id="nom"  ></TextField>
-            <TextField fx:id="prénom"></TextField>
-            <TextField fx:id="groupe"></TextField>
+            <TextField fx:id="nom"  promptText="Nom">
+            </TextField>
+            <TextField fx:id="prénom" promptText="Prénom"></TextField>
+            <TextField fx:id="groupe" promptText="Groupe"></TextField>
         </FlowPane>
     </top>
     <center>
@@ -29,6 +30,6 @@
         </GridPane>
     </center>
     <bottom>
-        <Button text="Quitter" fx:id="quitter"></Button> 
+        <Button text="Quitter" fx:id="quitter" onAction="#quitter"   ></Button> 
     </bottom>
 </BorderPane>
